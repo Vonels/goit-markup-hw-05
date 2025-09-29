@@ -405,6 +405,26 @@ img {
 .port-transform:hover .port-overlay {
   transform: translateY(0);
 }
+
+.model-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  max-width: 408px;
+  min-height: 584px;
+}
 /* footer */
 
 .footer-title {
@@ -510,10 +530,13 @@ img {
 .form-overlay {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 408px;
+  max-height: 584px;
 }
 
 .form-label-overlay {
+  width: 360px;
+  height: 58px;
   display: flex;
   flex-direction: column;
 }
@@ -529,4 +552,26 @@ img {
   margin-bottom: 10px;
   margin-left: 80px;
   font-weight: 500;
+}
+
+.fieldset-form {
+  border-radius: 4px;
+}
+
+.textarea-overlay {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 138px;
+}
+
+.button-overlay {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  display: flex;
+  flex-direction: column;
 }

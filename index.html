@@ -422,36 +422,47 @@
     </main>
     <div class="model-overlay">
       <div class="model">
+        <button class="modal-close">✖</button>
         <form class="form-overlay">
-          <fieldset>
-            <legend>Leave your contacts and we will call you back</legend>
+          <fieldset class="fieldset-form">
+            <h2>Leave your contacts and we will call you back</h2>
             <lable class="form-label-overlay">
               Name
+              <svg class="" width="16" height="16">
+                <use href="./images/icons.svg#icon-Contact"></use>
+              </svg>
               <input type="text" name="username" />
             </lable>
             <lable class="form-label-overlay">
               Phone
+              <svg class="" width="16" height="16">
+                <use href="./images/icons.svg#icon-Tel"></use>
+              </svg>
               <input type="tel" name="tel" />
             </lable>
             <lable class="form-label-overlay">
               Email
+              <svg class="" width="16" height="16">
+                <use href="./images/icons.svg#icon-list"></use>
+              </svg>
               <input type="email" name="email" />
             </lable>
-            <label>
+            <label class="textarea-overlay">
               Comment
               <textarea
                 name="comment"
                 row="5"
                 placeholder="Text input"
               ></textarea>
-              <label></label>
-                <input
-                  type="checkbox"
-                  name="name"
-                  value="I accept the terms and conditions of the Privacy Policy"
-                />
-              </label>
             </label>
+            <label>
+              <input
+                type="checkbox"
+                name="name"
+                value="I accept the terms and conditions of the Privacy Policy"
+              />
+            </label>
+            <button class="buttom-overlay" type="submit">Send</button>
           </fieldset>
         </form>
       </div>
@@ -502,21 +513,22 @@
           </ul>
         </div>
         <div class="footer-form">
-        <form class="form-title">
-          <p class="form-p">Subscribe</p>
+          <form class="form-title">
+            <p class="form-p">Subscribe</p>
             <input
               class="form-input"
               type="email"
               name="email"
               placeholder="E-mail"
             />
-          <button class="form-buttom" type="submit">Subscribe
-            <svg class="svg-f" width="24" height="20" >
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
+            <button class="form-buttom" type="submit">
+              Subscribe
+              <svg class="svg-f" width="24" height="20">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
