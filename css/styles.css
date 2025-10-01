@@ -5,7 +5,6 @@
 }
 .header-title {
   background-color: #ffffff;
-  padding: 20px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -89,10 +88,9 @@ img {
   padding: 0;
   margin: 0;
   gap: 40px;
-  padding: 15px 0;
 }
 
-.link-title::after {
+.page-nav .link-title.active::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -107,13 +105,20 @@ img {
   color: #2e2f42;
 }
 
+.link-title.active {
+  color: #404bbf;
+  position: relative;
+}
+
 .link-title {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
+  text-decoration: none;
   padding: 24px 0;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -260,9 +265,10 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
 .spdt-title-section {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -402,7 +408,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-transform:hover .port-overlay {
+.port-list:hover .port-overlay {
   transform: translateY(0);
 }
 
@@ -416,6 +422,7 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
+  pointer-events: none;
 }
 
 .model {
@@ -456,6 +463,10 @@ img {
   gap: 120px;
 }
 
+.logo-footer {
+  margin-right: 0;
+  margin-bottom: 16px;
+}
 .footer-conteiner {
   display: flex;
   align-items: baseline;
@@ -728,7 +739,7 @@ img {
   display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -764,4 +775,17 @@ img {
 
 .span-a {
   color: #4d5ae5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
